@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+header{
+background-color: gray;
+color: white;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+header button{
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.banner{
+    background-image: url(https://img.freepik.com/free-photo/beautiful-landscape-from-magazine-coming-life_23-2151158554.jpg?t=st=1721804341~exp=1721807941~hmac=d7d60d9b564dffeac289241f88202ba4b446aabc01ee4938540026576a5e2241&w=740);
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+}
+
+section{
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+section img{
+    width: 250px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.col{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+.col img{
+    border-radius: 10px;
+}
+
+.col img:hover{
+    box-shadow:  2px 4px white;
+}
+
+section span{
+    color: red;
+    font-size: 20px;
+}
+
+section button{
+    background: white;
+    color:black ;
+    padding:5px 20px ;
+    border-radius: 8px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+section button:hover{
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: gray;
+    padding: 30px 0;
+}
+
+footer h4{
+    color: white;
+
+}
+
+/* media query */
+
+@media screen and (max-width:400px){
+    .row{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .col{
+        width: 90%;
+    }
+
+    .col img{
+        width: 100%;
+    }
+}
